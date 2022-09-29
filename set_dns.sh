@@ -1,0 +1,1 @@
+echo nameserver $1 >> /etc/resolv.conf

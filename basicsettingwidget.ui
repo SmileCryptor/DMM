@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>BasicSettingsWidget</class>
+ <widget class="QWidget" name="BasicSettingsWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1024</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1024</width>
+    <height>600</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1024</width>
+    <height>600</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Basic Settings</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget#ToolWidget {
+	background-color: black;
+}
+
+QToolButton {
+	background-color: transparent;
+}
+
+QPushButton {
+	width: 160px;
+	height: 120px;
+	background: rgb(133, 131, 131);
+	border: 2px solid  rgb(255, 238, 50);
+	border-radius: 10px;
+	color: #d5d58c;
+	font-size: 36px;
+}
+
+QPushButton:pressed {
+	background: rgb(153, 151, 151);
+}</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item>
+    <layout class="QGridLayout" name="gridLayout">
+     <property name="leftMargin">
+      <number>40</number>
+     </property>
+     <property name="topMargin">
+      <number>23</number>
+     </property>
+     <property name="rightMargin">
+      <number>40</number>
+     </property>
+     <property name="spacing">
+      <number>40</number>
+     </property>
+     <item row="0" column="0">
+      <widget class="QPushButton" name="btnTruckid"/>
+     </item>
+     <item row="0" column="2">
+      <widget class="QPushButton" name="btnWeightcode">
+       <property name="minimumSize">
+        <size>
+         <width>160</width>
+         <height>120</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>160</width>
+         <height>120</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QPushButton" name="btnWifi">
+       <property name="minimumSize">
+        <size>
+         <width>160</width>
+         <height>120</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>160</width>
+         <height>120</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="3">
+      <widget class="QPushButton" name="btnEmailsetup">
+       <property name="text">
+        <string>EMAIL
+SETUP</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="4">
+      <widget class="QPushButton" name="btnSetRWT"/>
+     </item>
+     <item row="1" column="0">
+      <widget class="QPushButton" name="btnSetMWT"/>
+     </item>
+     <item row="1" column="1">
+      <widget class="QPushButton" name="btnSetClientHost"/>
+     </item>
+     <item row="1" column="2">
+      <widget class="QPushButton" name="btnNetworkSetup">
+       <property name="text">
+        <string>NET
+SETUP</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="3">
+      <widget class="QPushButton" name="btnSetRS232Parser">
+       <property name="text">
+        <string>RS 232
+Format</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <spacer name="verticalSpacer">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>147</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <property name="leftMargin">
+      <number>12</number>
+     </property>
+     <property name="rightMargin">
+      <number>12</number>
+     </property>
+     <property name="bottomMargin">
+      <number>7</number>
+     </property>
+     <item>
+      <widget class="QToolButton" name="btnBack">
+       <property name="icon">
+        <iconset>
+         <normaloff>res/gui/button_back.png</normaloff>res/gui/button_back.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>103</width>
+         <height>103</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QLabel" name="label">
+       <property name="pixmap">
+        <pixmap>res/gui/img_settings.png</pixmap>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer_2">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QToolButton" name="btnHome">
+       <property name="icon">
+        <iconset>
+         <normaloff>res/gui/button_home.png</normaloff>res/gui/button_home.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>103</width>
+         <height>103</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

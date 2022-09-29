@@ -1,0 +1,10 @@
+10.0.0.46:8080[Settings]
+truckid = AL-RPIDEV-1
+weightthreshold = 30
+serialmode = RS232
+parsermode = DF1500
+weightmode = LBS
+weightcode = None
+client_host = 10.0.0.46:8080
+saved_user = Steve
+

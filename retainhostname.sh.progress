@@ -1,0 +1,4 @@
+#!/bin/bash
+sed -e "s/truckid = /truckid = "$HOSTNAME""$NULL"/" config.ini
+exit
+

@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Rs232ParserModeDialog</class>
+ <widget class="QDialog" name="Rs232ParserModeDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>560</width>
+    <height>400</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>560</width>
+    <height>400</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QDialog#CodeDialog  {
+border: 7px solid rgb(251, 209, 89);
+}</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QLabel" name="label">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>90</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>90</height>
+      </size>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>30</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background: rgb(255, 228, 62);
+color: rgb(90, 90, 90);
+border-bottom: 7px solid rgb(251, 209, 89);</string>
+     </property>
+     <property name="text">
+      <string>RS232 PARSER MODE</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QWidget" name="widget" native="true">
+     <property name="styleSheet">
+      <string notr="true">QWidget#widget {
+	background: rgb(62, 62, 62);
+}
+
+QPushButton {
+	color: rgb(223, 211, 124);
+	background: rgb(101, 101, 101);
+	border: 4px solid rgb(173, 157, 44);
+	border-radius: 20px;
+}
+
+QPushButton:pressed {
+	color: rgb(253, 241, 154);
+	background: rgb(131, 131, 131);
+}</string>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <property name="spacing">
+       <number>18</number>
+      </property>
+      <property name="leftMargin">
+       <number>18</number>
+      </property>
+      <property name="rightMargin">
+       <number>15</number>
+      </property>
+      <item>
+       <widget class="QPushButton" name="btnDF1500">
+        <property name="minimumSize">
+         <size>
+          <width>507</width>
+          <height>76</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>507</width>
+          <height>76</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>30</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>DF1500</string>
+        </property>
+        <property name="checkable">
+         <bool>false</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btnAvery">
+        <property name="minimumSize">
+         <size>
+          <width>507</width>
+          <height>76</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>507</width>
+          <height>76</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>30</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>AveryWeigh-Tronix</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btnRavas">
+        <property name="minimumSize">
+         <size>
+          <width>507</width>
+          <height>76</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>507</width>
+          <height>76</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>30</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QWidget#widget {
+	background: rgb(62, 62, 62);
+}
+
+QPushButton {
+	color: rgb(223, 211, 124);
+	background: rgb(101, 101, 101);
+	border: 4px solid rgb(173, 157, 44);
+	border-radius: 20px;
+}
+
+QPushButton:pressed {
+	color: rgb(253, 241, 154);
+	background: rgb(131, 131, 131);
+}</string>
+        </property>
+        <property name="text">
+         <string>Ravas</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
